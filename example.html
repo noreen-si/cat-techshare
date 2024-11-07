@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Share</title>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .draggable {
+      width: 200px;
+      height: 50px;
+      background-color: lightblue;
+      border: 1px solid #333;
+      text-align: center;
+      line-height: 50px;
+      cursor: grab;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="draggable" data-x="0" data-y="0">Item 1</div>
+    <div class="draggable" data-x="0" data-y="60">Item 2</div>
+    <div class="draggable" data-x="0" data-y="120">Item 3</div>
+  </div>
+</body>
+</html>
