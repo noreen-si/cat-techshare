@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Share Example 2</title>
+  <script src="script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+  <style>
+    .tap-target {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+        margin: 1rem auto;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+
+    img {
+        height: 16em;
+        width: 16em;
+    }
+
+    .tap-target .heart {
+        background-image: url('heart.png');
+        width: 64px;
+        height: 64px;
+    }
+
+    .tap-target.liked .heart {
+        background-image: url('liked_heart.png');
+        width: 64px;
+        height: 64px;
+    }
+
+    #popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed; 
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        background-color: rgba(0,0,0,0.4); 
+    }
+
+    #popupContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        margin: 20% auto; 
+        width: 50%; 
+    }
+
+  </style>
+</head>
+<body>
+    <div class="tap-target">
+        <img src="cat.jpg">
+        <div class="heart"></div>
+    </div>
+    <div id="popup" style="display: none;">
+        <div id="popupContent">
+            <img src="cat.jpg">
+            <span>Some user interaction<span>
+        </div>
+    </div>
+</body>
+</html>
