@@ -11,24 +11,33 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      // height: auto;
+      height: auto;
     }
     .draggable {
       width: 200px;
       height: 50px;
-      background-color: lightblue;
+      /* background-color: lightblue; */
       border: 1px solid #333;
       text-align: center;
       line-height: 50px;
       cursor: grab;
     }
+    #item1 {
+      background-color: lightblue;
+    }
+    #item2 {
+      background-color: lightpink;
+    }
+    #item3 {
+      background-color: lightgreen;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="draggable" data-x="0" data-y="0">Item 1</div>
-    <div class="draggable" data-x="0" data-y="60">Item 2</div>
-    <div class="draggable" data-x="0" data-y="120">Item 3</div>
+    <div class="draggable" data-x="0" data-y="0" id="item1">Item 1</div>
+    <div class="draggable" data-x="0" data-y="60" id="item2">Item 2</div>
+    <div class="draggable" data-x="0" data-y="120" id="item3">Item 3</div>
   </div>
 </body>
 </html>
